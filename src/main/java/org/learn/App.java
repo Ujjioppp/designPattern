@@ -23,10 +23,6 @@ public class App {
         app.testFactory();
     }
 
-    private static void drawSplitLine(){
-        System.out.println("-------------------------------------------------------------------------------------");
-    }
-
     /**
      * 测试单例
      */
@@ -49,5 +45,13 @@ public class App {
         Calculator calculator2 = calculatorFactory.getCalculator(CalculateTypeEnum.SUBTRACTION.getCode());
         System.out.println(calculator1.calculate(num1, num2));
         System.out.println(calculator2.calculate(num1, num2));
+    }
+
+
+
+
+
+    private static void drawSplitLine(){
+        System.out.println("-------------------------------------------------------------------------------------");
     }
 }

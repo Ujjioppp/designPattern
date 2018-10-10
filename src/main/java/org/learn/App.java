@@ -40,9 +40,8 @@ public class App {
         System.out.println("工厂");
         BigDecimal num1 = BigDecimal.TEN;
         BigDecimal num2 = BigDecimal.ONE;
-        CalculatorFactory calculatorFactory = new CalculatorFactory();
-        Calculator calculator1 = calculatorFactory.getCalculator(CalculateTypeEnum.ADD.getCode());
-        Calculator calculator2 = calculatorFactory.getCalculator(CalculateTypeEnum.SUBTRACTION.getCode());
+        Calculator calculator1 = CalculatorFactory.getCalculator(CalculateTypeEnum.ADD.getCode());
+        Calculator calculator2 = CalculatorFactory.getCalculator(CalculateTypeEnum.SUBTRACTION.getCode());
         System.out.println(calculator1.calculate(num1, num2));
         System.out.println(calculator2.calculate(num1, num2));
     }

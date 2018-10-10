@@ -10,7 +10,7 @@ import org.learn.factory.impl.Subtraction;
  */
 public class CalculatorFactory {
 
-    public Calculator getCalculator(String calculateType) throws Exception {
+    public static Calculator getCalculator(String calculateType) throws Exception {
         Calculator calculator;
         if (StringUtils.equals(CalculateTypeEnum.ADD.getCode(), calculateType)) {
             calculator = new Addition();

@@ -1,4 +1,4 @@
-package org.learn.factory;
+package org.learn.factory.interfaces;
 
 import java.math.BigDecimal;
 
